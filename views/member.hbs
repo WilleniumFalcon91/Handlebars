@@ -1,12 +1,18 @@
 {{#each members}}
-    <h1>{{surname}}, {{firstname}}</h1>
-    <p>
-        Address: {{address}}
-    </p>
-    <p>
-        Zip code: {{zipcode}}
-    </p>
-    <p>
-        Telephone: {{telephone}}
-    </p>
+    <div class="container-fluid">
+        <div class="name">
+            <h1>{{surname}}, {{firstname}}</h1>
+            <p>
+                Address: {{address}}
+            </p>
+        </div>
+        <div class="details">
+            <p>
+                Zip code: {{zipcode}}
+            </p>
+            <p>
+                Telephone: {{telephone}}
+            </p>
+        </div>
+    </div>
 {{/each}}
